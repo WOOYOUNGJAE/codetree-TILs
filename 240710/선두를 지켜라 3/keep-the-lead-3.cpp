@@ -11,8 +11,8 @@ int main() {
     int N = 0, M = 0;
     cin >> N >> M;
 
-    unsigned int distancePerTimeA[1000]{};
-    unsigned int distancePerTimeB[1000]{};
+    unsigned long long distancePerTimeA[1000]{};
+    unsigned long long distancePerTimeB[1000]{};
 
     int timeIndex = 0;
     for (int i = 0; i < N; ++i)
