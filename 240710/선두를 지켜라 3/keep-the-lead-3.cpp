@@ -1,10 +1,10 @@
 #include <iostream>
 using namespace std;
 
-enum FLAG
-{
-    FLAG_NONE, FLAG_A, FLAG_B, FLAG_AB
-};
+#define FLAG_NONE 0
+#define FLAG_A 1
+#define FLAG_B 2
+#define FLAG_AB 3
 
 int main() {
     // 여기에 코드를 작성해주세요.
@@ -47,12 +47,12 @@ int main() {
         }
     }
 
-    FLAG ePrevFlag = FLAG_NONE;
+    int ePrevFlag = FLAG_NONE;
     timeIndex = 0;
     int result = 0;
     for (int i = 0; i < totalTime; ++i, ++timeIndex)
     {
-        FLAG eCurFlag = FLAG_NONE;
+        int eCurFlag = FLAG_NONE;
 
         if (distancePerTimeA[timeIndex] > distancePerTimeB[timeIndex])
         {
